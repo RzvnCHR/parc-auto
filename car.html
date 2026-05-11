@@ -5,18 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Detalii Mașină — AUTO PARK</title>
+
   <meta name="description" content="Detalii complete despre mașina selectată din parcul auto AUTO PARK. Galerie foto, specificații tehnice și preț.">
-  <meta name="keywords" content="parc auto, masina de vanzare, detalii masina, dealer auto, second hand">
+  <meta name="keywords" content="parc auto, masina de vanzare, dealer auto, masini second hand">
   <meta name="robots" content="index, follow">
 
   <meta property="og:title" content="Detalii Mașină — AUTO PARK">
-  <meta property="og:description" content="Detalii complete, galerie foto și preț pentru mașina selectată din parcul auto AUTO PARK.">
+  <meta property="og:description" content="Galerie foto, specificații tehnice și detalii complete despre mașina selectată.">
   <meta property="og:type" content="product">
-  <meta property="og:url" content="https://autopark.ro/car.html">
 
   <link rel="stylesheet" href="style.css">
 
   <style>
+
     .car-detail-layout {
       max-width: 1200px;
       margin: 5% auto !important;
@@ -31,21 +32,16 @@
       width: 100%;
     }
 
-    .car-description-desktop {
-      margin: 1.3rem 0 1.5rem;
-      padding: 1.2rem;
+    .car-description {
+      margin-top: 1.5rem;
       background: var(--card);
       border: 1px solid var(--border);
       border-radius: var(--radius-lg);
+      padding: 1.5rem;
     }
 
-    .car-description-mobile {
-      display: none;
-    }
-
-    .car-description-desktop h3,
-    .car-description-mobile h3 {
-      margin-bottom: 0.7rem;
+    .car-description h3 {
+      margin-bottom: 1rem;
     }
 
     .tech-section {
@@ -64,163 +60,150 @@
       }
     }
 
-@media (max-width: 768px) {
+    @media (max-width: 768px) {
 
-  .car-page-top {
-    padding: 1rem 4% !important;
-  }
+      .car-page-top {
+        padding: 1rem 4% !important;
+      }
 
-  .car-main-content {
-    padding: 1.5rem 4% 4rem !important;
-  }
+      .car-main-content {
+        padding: 1.5rem 4% 4rem !important;
+      }
 
-  .car-detail-layout {
-    grid-template-columns: 1fr !important;
-    gap: 1.5rem !important;
-    margin: 15% auto !important;
+      .car-detail-layout {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+        margin: 15% auto !important;
 
-    display: flex !important;
-    flex-direction: column !important;
-  }
+        display: flex !important;
+        flex-direction: column !important;
+      }
 
-  /* IMPORTANT */
-  .car-left-column {
-    display: contents !important;
-  }
+      .car-left-column {
+        display: contents !important;
+      }
 
-  .gallery {
-    order: 1 !important;
-  }
+      .gallery {
+        order: 1 !important;
+      }
 
-  .car-right-column {
-    order: 2 !important;
-  }
+      .car-right-column {
+        order: 2 !important;
+      }
 
-  .tech-section {
-    order: 3 !important;
-    margin-top: 0 !important;
-  }
+      .car-description {
+        order: 3 !important;
+        margin-top: 0 !important;
+      }
 
-  .car-description-desktop {
-    display: none !important;
-  }
+      .tech-section {
+        order: 4 !important;
+        margin-top: 0 !important;
+      }
 
-  .car-description-mobile {
-    display: block !important;
-    margin-top: 1.2rem !important;
-    padding: 1.2rem !important;
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: var(--radius-lg);
-  }
+      .car-info-panel {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 1.2rem !important;
+      }
 
-  .car-info-panel {
-    width: 100% !important;
-    max-width: 100% !important;
-    padding: 1.2rem !important;
-  }
+      .car-info-name {
+        font-size: 1.8rem !important;
+        line-height: 1.15 !important;
+      }
 
-  .car-info-name {
-    font-size: 1.8rem !important;
-    line-height: 1.15 !important;
-  }
+      .car-info-price {
+        font-size: 1.5rem !important;
+      }
 
-  .car-info-price {
-    font-size: 1.5rem !important;
-  }
+      .car-info-cta {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 0.8rem !important;
+      }
 
-  .car-info-cta {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 0.8rem !important;
-  }
+      .car-info-cta .btn {
+        width: 100% !important;
+        justify-content: center !important;
+        text-align: center !important;
+      }
 
-  .car-info-cta .btn {
-    width: 100% !important;
-    justify-content: center !important;
-    text-align: center !important;
-  }
+      .gallery,
+      .gallery-main,
+      .gallery-main img,
+      .gallery-thumbs,
+      .tech-section,
+      .car-description {
+        width: 100% !important;
+        max-width: 100% !important;
+      }
 
-  .gallery,
-  .gallery-main,
-  .gallery-main img,
-  .gallery-thumbs,
-  .tech-section,
-  .car-description {
-    width: 100% !important;
-    max-width: 100% !important;
-  }
+      .gallery-main {
+        overflow: hidden !important;
+      }
 
-  .gallery-main {
-    overflow: hidden !important;
-  }
+      .gallery-main img {
+        height: 260px !important;
+        max-height: 260px !important;
+        object-fit: cover !important;
+      }
 
-  .gallery-main img {
-    height: 260px !important;
-    max-height: 260px !important;
-    object-fit: cover !important;
-  }
+      .gallery-arrow {
+        width: 38px !important;
+        height: 38px !important;
+      }
 
-  .gallery-arrow {
-    width: 38px !important;
-    height: 38px !important;
-  }
+      .gallery-prev {
+        left: 10px !important;
+      }
 
-  .gallery-prev {
-    left: 10px !important;
-  }
+      .gallery-next {
+        right: 10px !important;
+      }
 
-  .gallery-next {
-    right: 10px !important;
-  }
+      .gallery-counter {
+        bottom: 10px !important;
+        right: 10px !important;
+        font-size: 0.75rem !important;
+      }
 
-  .gallery-counter {
-    bottom: 10px !important;
-    right: 10px !important;
-    font-size: 0.75rem !important;
-  }
+      .gallery-thumbs {
+        display: grid !important;
+        grid-template-columns: repeat(4, 1fr) !important;
+        gap: 8px !important;
+      }
 
-  .gallery-thumbs {
-    display: grid !important;
-    grid-template-columns: repeat(4, 1fr) !important;
-    gap: 8px !important;
-  }
+      .gallery-thumbs img {
+        width: 100% !important;
+        height: 58px !important;
+        object-fit: cover !important;
+      }
 
-  .gallery-thumbs img {
-    width: 100% !important;
-    height: 58px !important;
-    object-fit: cover !important;
-  }
+      .tech-section,
+      .car-description {
+        padding: 1.2rem !important;
+      }
 
-  .tech-section {
-    padding: 1.2rem !important;
-  }
+      .tech-table,
+      .tech-table tbody,
+      .tech-table tr,
+      .tech-table td {
+        display: block !important;
+        width: 100% !important;
+      }
 
-  .tech-table,
-  .tech-table tbody,
-  .tech-table tr,
-  .tech-table td {
-    display: block !important;
-    width: 100% !important;
-  }
+      .tech-table tr {
+        padding: 0.8rem 0 !important;
+        border-bottom: 1px solid var(--border) !important;
+      }
 
-  .tech-table tr {
-    padding: 0.8rem 0 !important;
-    border-bottom: 1px solid var(--border) !important;
-  }
-
-  .tech-table td {
-    padding: 0.2rem 0 !important;
-  }
-
-  .breadcrumb {
-    overflow-x: auto !important;
-    white-space: nowrap !important;
-    padding-bottom: 4px !important;
-  }
-}
+      .tech-table td {
+        padding: 0.2rem 0 !important;
+      }
+    }
 
     @media (max-width: 420px) {
+
       .car-info-name {
         font-size: 1.55rem !important;
       }
@@ -239,13 +222,16 @@
         padding-right: 3.5% !important;
       }
     }
+
   </style>
 </head>
 
 <body data-page="car">
 
+  <!-- NAVBAR -->
   <nav class="navbar scrolled" id="navbar">
     <a href="index.html" class="nav-logo">AUTO <span>PARK</span></a>
+
     <ul class="nav-links">
       <li><a href="index.html">Acasă</a></li>
       <li><a href="index.html#masini">Mașini</a></li>
@@ -253,12 +239,16 @@
       <li><a href="index.html#recenzii">Recenzii</a></li>
       <li><a href="index.html#contact">Contact</a></li>
     </ul>
-    <button class="hamburger" id="hamburger" aria-label="Meniu" aria-expanded="false">
-      <span></span><span></span><span></span>
+
+    <button class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
     </button>
   </nav>
 
-  <nav class="mobile-menu" id="mobileMenu" aria-label="Meniu mobil">
+  <!-- MOBILE MENU -->
+  <nav class="mobile-menu" id="mobileMenu">
     <a href="index.html">Acasă</a>
     <a href="index.html#masini">Mașini</a>
     <a href="index.html#despre">Despre noi</a>
@@ -266,133 +256,135 @@
     <a href="index.html#contact">Contact</a>
   </nav>
 
+  <!-- MAIN -->
   <div class="car-detail-wrap">
+
     <div class="car-main-content">
 
       <div class="car-detail-layout">
 
-        <!-- STÂNGA: Galerie + Specificații -->
+        <!-- STÂNGA -->
         <div class="car-left-column">
 
+          <!-- GALLERY -->
           <div class="gallery">
+
             <div class="gallery-main" id="galleryMain">
-              <img id="galleryMainImg" src="" alt="Mașină" loading="eager">
 
-              <button class="gallery-arrow gallery-prev" id="galleryPrev" aria-label="Imaginea anterioară">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                  <polyline points="15 18 9 12 15 6"/>
-                </svg>
+              <img id="galleryMainImg" src="" alt="Mașină">
+
+              <button class="gallery-arrow gallery-prev" id="galleryPrev">
+                ‹
               </button>
 
-              <button class="gallery-arrow gallery-next" id="galleryNext" aria-label="Imaginea următoare">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                  <polyline points="9 18 15 12 9 6"/>
-                </svg>
+              <button class="gallery-arrow gallery-next" id="galleryNext">
+                ›
               </button>
 
-              <div class="gallery-counter" id="galleryCounter">1 / 4</div>
+              <div class="gallery-counter" id="galleryCounter">
+                1 / 4
+              </div>
+
             </div>
 
             <div class="gallery-thumbs" id="galleryThumbs"></div>
+
           </div>
 
+          <!-- DESCRIERE -->
+          <div class="car-description">
+            <h3>Descriere</h3>
+            <p id="carDescription"></p>
+          </div>
+
+          <!-- SPECIFICATII -->
           <div class="tech-section">
+
             <h3>Specificații tehnice</h3>
+
             <table class="tech-table">
               <tbody id="carTechTable"></tbody>
             </table>
+
           </div>
 
         </div>
 
-        <!-- DREAPTA: Titlu + Descriere desktop + Butoane + Contact -->
+        <!-- DREAPTA -->
         <div class="car-right-column">
 
           <div class="car-info-panel">
-            <div class="car-info-badge" id="carBadge">Disponibil</div>
 
-            <h1 class="car-info-name" id="carName">Se încarcă...</h1>
+            <div class="car-info-badge" id="carBadge">
+              Disponibil
+            </div>
 
-            <div class="car-info-price" id="carPrice">—</div>
+            <h1 class="car-info-name" id="carName">
+              Se încarcă...
+            </h1>
+
+            <div class="car-info-price" id="carPrice">
+              —
+            </div>
 
             <div class="car-quick-specs" id="carQuickSpecs"></div>
 
-            <!-- Desktop: descriere deasupra butoanelor -->
-            <div class="car-description-desktop">
-              <h3>Descriere</h3>
-              <p id="carDescription"></p>
-            </div>
-
             <div class="car-info-cta">
+
               <a href="tel:+40XXXXXXXXX" class="btn btn-primary btn-lg">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 5.94 5.94l1.77-1.77a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
-                </svg>
                 Sună acum pentru detalii
               </a>
 
               <a href="index.html#masini" class="btn btn-outline">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <polyline points="15 18 9 12 15 6"/>
-                </svg>
                 Înapoi la mașini
               </a>
+
             </div>
 
-            <!-- Mobile: descriere sub butoane -->
-            <div class="car-description-mobile">
-              <h3>Descriere</h3>
-              <p id="carDescriptionMobile"></p>
-            </div>
           </div>
 
-          <div style="background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 0.5rem;">
-            <div style="font-family: var(--font-display); font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); margin-bottom: 1.2rem;">
+          <!-- CONTACT -->
+          <div style="background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1rem;">
+
+            <div style="font-family: var(--font-display); font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); margin-bottom: 1rem;">
               Contact rapid
             </div>
 
-            <div style="display: flex; align-items: center; gap: 0.8rem; margin-bottom: 1rem;">
-              <div style="width: 38px; height: 38px; background: rgba(217,4,41,0.1); border: 1px solid var(--border-red); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2">
-                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 5.94 5.94l1.77-1.77a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
-                </svg>
+            <div style="margin-bottom: 1rem;">
+              <div style="font-size: 0.75rem; color: var(--muted); margin-bottom: 0.2rem;">
+                Telefon
               </div>
 
-              <div>
-                <div style="font-size: 0.75rem; color: var(--muted); margin-bottom: 0.1rem;">Telefon</div>
-                <a href="tel:+40XXXXXXXXX" style="font-family: var(--font-display); font-size: 1rem; font-weight: 700; color: var(--text); letter-spacing: 0.05em; transition: color 0.2s;" onmouseover="this.style.color='var(--primary)'" onmouseout="this.style.color='var(--text)'">
-                  +40 XXX XXX XXX
-                </a>
-              </div>
+              <a href="tel:+40XXXXXXXXX" style="font-size: 1rem; font-weight: 700;">
+                +40 XXX XXX XXX
+              </a>
             </div>
 
-            <div style="display: flex; align-items: center; gap: 0.8rem;">
-              <div style="width: 38px; height: 38px; background: rgba(217,4,41,0.1); border: 1px solid var(--border-red); border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2">
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-                  <circle cx="12" cy="10" r="3"/>
-                </svg>
+            <div>
+              <div style="font-size: 0.75rem; color: var(--muted); margin-bottom: 0.2rem;">
+                Locație
               </div>
 
-              <div>
-                <div style="font-size: 0.75rem; color: var(--muted); margin-bottom: 0.1rem;">Locație</div>
-                <span style="font-family: var(--font-display); font-size: 0.95rem; font-weight: 600; color: var(--text-dim);">
-                  Oraș, România
-                </span>
-              </div>
+              <span>
+                Oraș, România
+              </span>
             </div>
+
           </div>
 
-          <div style="background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1.2rem 1.5rem; margin-top: 1rem;">
-            <div style="font-family: var(--font-display); font-size: 0.72rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); margin-bottom: 0.8rem;">
+          <!-- PROGRAM -->
+          <div style="background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1rem;">
+
+            <div style="font-family: var(--font-display); font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); margin-bottom: 1rem;">
               Program
             </div>
 
-            <div style="font-size: 0.85rem; color: var(--muted-light); line-height: 1.9;">
-              Lun – Vin: <strong style="color: var(--text);">09:00 – 18:00</strong><br>
-              Sâmbătă: <strong style="color: var(--text);">10:00 – 16:00</strong><br>
-              Duminică: <span style="color: var(--muted);">Închis</span>
+            <div style="line-height: 1.9;">
+              Lun – Vin: <strong>09:00 – 18:00</strong><br>
+              Sâmbătă: <strong>10:00 – 16:00</strong><br>
+              Duminică: Închis
             </div>
+
           </div>
 
         </div>
@@ -400,32 +392,30 @@
       </div>
 
     </div>
+
   </div>
 
+  <!-- FOOTER -->
   <footer class="footer">
+
     <div class="footer-inner">
+
       <div class="footer-brand">
-        <a href="index.html" class="nav-logo">AUTO <span>PARK</span></a>
-        <p>Parc auto serios, cu mașini verificate și prezentate transparent. Seriozitate, profesionalism și prețuri corecte.</p>
 
-        <div class="footer-contact-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 5.94 5.94l1.77-1.77a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
-          </svg>
-          +40 XXX XXX XXX
-        </div>
+        <a href="index.html" class="nav-logo">
+          AUTO <span>PARK</span>
+        </a>
 
-        <div class="footer-contact-item">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
-            <circle cx="12" cy="10" r="3"/>
-          </svg>
-          Oraș, România
-        </div>
+        <p>
+          Parc auto serios, cu mașini verificate și prezentate transparent.
+        </p>
+
       </div>
 
       <div class="footer-col">
+
         <h4>Navigare</h4>
+
         <ul>
           <li><a href="index.html">Acasă</a></li>
           <li><a href="index.html#masini">Mașini</a></li>
@@ -433,55 +423,20 @@
           <li><a href="index.html#recenzii">Recenzii</a></li>
           <li><a href="index.html#contact">Contact</a></li>
         </ul>
+
       </div>
 
-      <div class="footer-col">
-        <h4>Program</h4>
-        <ul>
-          <li><a href="#">Luni – Vineri: 09 – 18</a></li>
-          <li><a href="#">Sâmbătă: 10 – 16</a></li>
-          <li><a href="#" style="color: var(--muted);">Duminică: Închis</a></li>
-        </ul>
-
-        <div style="margin-top: 1.5rem;">
-          <h4>Urmărește-ne</h4>
-          <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-          </ul>
-        </div>
-      </div>
     </div>
 
     <div class="footer-bottom">
-      <p class="footer-copy">© 2025 <span>AUTO PARK</span>. Toate drepturile rezervate.</p>
-      <p class="footer-copy">Mașini verificate. Prețuri corecte.</p>
+      <p class="footer-copy">
+        © 2025 <span>AUTO PARK</span>. Toate drepturile rezervate.
+      </p>
     </div>
+
   </footer>
 
   <script src="script.js"></script>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const desktopDesc = document.getElementById("carDescription");
-      const mobileDesc = document.getElementById("carDescriptionMobile");
-
-      if (desktopDesc && mobileDesc) {
-        const syncDescription = () => {
-          mobileDesc.innerHTML = desktopDesc.innerHTML;
-        };
-
-        syncDescription();
-
-        const observer = new MutationObserver(syncDescription);
-        observer.observe(desktopDesc, {
-          childList: true,
-          characterData: true,
-          subtree: true
-        });
-      }
-    });
-  </script>
 
 </body>
 </html>
