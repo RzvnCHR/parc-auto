@@ -64,153 +64,161 @@
       }
     }
 
-    @media (max-width: 768px) {
-      .car-page-top {
-        padding: 1rem 4% !important;
-      }
+@media (max-width: 768px) {
 
-      .car-main-content {
-        padding: 1.5rem 4% 4rem !important;
-      }
+  .car-page-top {
+    padding: 1rem 4% !important;
+  }
 
-      .car-detail-layout {
-        grid-template-columns: 1fr !important;
-        gap: 1.5rem !important;
-        margin: 15% auto !important;
-        display: flex !important;
-        flex-direction: column !important;
-      }
+  .car-main-content {
+    padding: 1.5rem 4% 4rem !important;
+  }
 
-      .car-left-column {
-        order: 1;
-      }
+  .car-detail-layout {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+    margin: 15% auto !important;
 
-      .car-right-column {
-        order: 2;
-      }
+    display: flex !important;
+    flex-direction: column !important;
+  }
 
-      .tech-section {
-        order: 4;
-      }
+  /* IMPORTANT */
+  .car-left-column {
+    display: contents !important;
+  }
 
-      .car-description-desktop {
-        display: none !important;
-      }
+  .gallery {
+    order: 1 !important;
+  }
 
-      .car-description-mobile {
-        display: block !important;
-        margin-top: 1.2rem !important;
-        padding: 1.2rem !important;
-        background: var(--card);
-        border: 1px solid var(--border);
-        border-radius: var(--radius-lg);
-      }
+  .car-right-column {
+    order: 2 !important;
+  }
 
-      .car-info-panel {
-        width: 100% !important;
-        max-width: 100% !important;
-        padding: 1.2rem !important;
-      }
+  .tech-section {
+    order: 3 !important;
+    margin-top: 0 !important;
+  }
 
-      .car-info-name {
-        font-size: 1.8rem !important;
-        line-height: 1.15 !important;
-      }
+  .car-description-desktop {
+    display: none !important;
+  }
 
-      .car-info-price {
-        font-size: 1.5rem !important;
-      }
+  .car-description-mobile {
+    display: block !important;
+    margin-top: 1.2rem !important;
+    padding: 1.2rem !important;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+  }
 
-      .car-info-cta {
-        display: flex !important;
-        flex-direction: column !important;
-        gap: 0.8rem !important;
-      }
+  .car-info-panel {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 1.2rem !important;
+  }
 
-      .car-info-cta .btn {
-        width: 100% !important;
-        justify-content: center !important;
-        text-align: center !important;
-      }
+  .car-info-name {
+    font-size: 1.8rem !important;
+    line-height: 1.15 !important;
+  }
 
-      .gallery,
-      .gallery-main,
-      .gallery-main img,
-      .gallery-thumbs,
-      .tech-section,
-      .car-description {
-        width: 100% !important;
-        max-width: 100% !important;
-      }
+  .car-info-price {
+    font-size: 1.5rem !important;
+  }
 
-      .gallery-main {
-        overflow: hidden !important;
-      }
+  .car-info-cta {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.8rem !important;
+  }
 
-      .gallery-main img {
-        height: 260px !important;
-        max-height: 260px !important;
-        object-fit: cover !important;
-      }
+  .car-info-cta .btn {
+    width: 100% !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
 
-      .gallery-arrow {
-        width: 38px !important;
-        height: 38px !important;
-      }
+  .gallery,
+  .gallery-main,
+  .gallery-main img,
+  .gallery-thumbs,
+  .tech-section,
+  .car-description {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
 
-      .gallery-prev {
-        left: 10px !important;
-      }
+  .gallery-main {
+    overflow: hidden !important;
+  }
 
-      .gallery-next {
-        right: 10px !important;
-      }
+  .gallery-main img {
+    height: 260px !important;
+    max-height: 260px !important;
+    object-fit: cover !important;
+  }
 
-      .gallery-counter {
-        bottom: 10px !important;
-        right: 10px !important;
-        font-size: 0.75rem !important;
-      }
+  .gallery-arrow {
+    width: 38px !important;
+    height: 38px !important;
+  }
 
-      .gallery-thumbs {
-        display: grid !important;
-        grid-template-columns: repeat(4, 1fr) !important;
-        gap: 8px !important;
-      }
+  .gallery-prev {
+    left: 10px !important;
+  }
 
-      .gallery-thumbs img {
-        width: 100% !important;
-        height: 58px !important;
-        object-fit: cover !important;
-      }
+  .gallery-next {
+    right: 10px !important;
+  }
 
-      .tech-section {
-        padding: 1.2rem !important;
-      }
+  .gallery-counter {
+    bottom: 10px !important;
+    right: 10px !important;
+    font-size: 0.75rem !important;
+  }
 
-      .tech-table,
-      .tech-table tbody,
-      .tech-table tr,
-      .tech-table td {
-        display: block !important;
-        width: 100% !important;
-      }
+  .gallery-thumbs {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 8px !important;
+  }
 
-      .tech-table tr {
-        padding: 0.8rem 0 !important;
-        border-bottom: 1px solid var(--border) !important;
-      }
+  .gallery-thumbs img {
+    width: 100% !important;
+    height: 58px !important;
+    object-fit: cover !important;
+  }
 
-      .tech-table td {
-        padding: 0.2rem 0 !important;
-      }
+  .tech-section {
+    padding: 1.2rem !important;
+  }
 
-      .breadcrumb {
-        overflow-x: auto !important;
-        white-space: nowrap !important;
-        padding-bottom: 4px !important;
-      }
-    }
+  .tech-table,
+  .tech-table tbody,
+  .tech-table tr,
+  .tech-table td {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  .tech-table tr {
+    padding: 0.8rem 0 !important;
+    border-bottom: 1px solid var(--border) !important;
+  }
+
+  .tech-table td {
+    padding: 0.2rem 0 !important;
+  }
+
+  .breadcrumb {
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+    padding-bottom: 4px !important;
+  }
+}
 
     @media (max-width: 420px) {
       .car-info-name {
