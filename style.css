@@ -247,7 +247,7 @@ ul {
   height: 100%;
   object-fit: cover;
   object-position: center;
-  background: url('heroimage.jpg');
+  background: url('heroimage.jpg') center center / cover no-repeat;;
 }
 
 .hero-overlay {
