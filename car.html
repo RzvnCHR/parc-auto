@@ -10,10 +10,6 @@
   <meta name="keywords" content="parc auto, masina de vanzare, dealer auto, masini second hand">
   <meta name="robots" content="index, follow">
 
-  <meta property="og:title" content="Detalii Mașină — AUTO PARK">
-  <meta property="og:description" content="Galerie foto, specificații tehnice și detalii complete despre mașina selectată.">
-  <meta property="og:type" content="product">
-
   <link rel="stylesheet" href="style.css">
 
   <style>
@@ -48,46 +44,33 @@
       margin-top: 1.5rem;
     }
 
-    @media (max-width: 1024px) {
-      .car-detail-layout {
-        grid-template-columns: 1fr !important;
-        gap: 2rem !important;
-        margin: 10% auto !important;
-      }
-
-      .car-main-content {
-        padding: 2rem 4% 5rem !important;
-      }
-    }
+    /* ================= MOBILE ================= */
 
     @media (max-width: 768px) {
-
-      .car-page-top {
-        padding: 1rem 4% !important;
-      }
 
       .car-main-content {
         padding: 1.5rem 4% 4rem !important;
       }
 
       .car-detail-layout {
-        grid-template-columns: 1fr !important;
-        gap: 1.5rem !important;
-        margin: 15% auto !important;
-
         display: flex !important;
         flex-direction: column !important;
+        gap: 1.5rem !important;
+        margin: 15% auto !important;
       }
 
-      .car-left-column {
+      /* IMPORTANT */
+      .car-left-column,
+      .car-right-column {
         display: contents !important;
       }
 
+      /* ORDINE */
       .gallery {
         order: 1 !important;
       }
 
-      .car-right-column {
+      .car-info-panel {
         order: 2 !important;
       }
 
@@ -101,7 +84,37 @@
         margin-top: 0 !important;
       }
 
-      .car-info-panel {
+      .contact-card {
+        order: 5 !important;
+      }
+
+      .program-card {
+        order: 6 !important;
+      }
+
+      .gallery-main img {
+        height: 260px !important;
+        max-height: 260px !important;
+        object-fit: cover !important;
+      }
+
+      .gallery-thumbs {
+        display: grid !important;
+        grid-template-columns: repeat(4, 1fr) !important;
+        gap: 8px !important;
+      }
+
+      .gallery-thumbs img {
+        width: 100% !important;
+        height: 58px !important;
+        object-fit: cover !important;
+      }
+
+      .car-info-panel,
+      .car-description,
+      .tech-section,
+      .contact-card,
+      .program-card {
         width: 100% !important;
         max-width: 100% !important;
         padding: 1.2rem !important;
@@ -125,63 +138,6 @@
       .car-info-cta .btn {
         width: 100% !important;
         justify-content: center !important;
-        text-align: center !important;
-      }
-
-      .gallery,
-      .gallery-main,
-      .gallery-main img,
-      .gallery-thumbs,
-      .tech-section,
-      .car-description {
-        width: 100% !important;
-        max-width: 100% !important;
-      }
-
-      .gallery-main {
-        overflow: hidden !important;
-      }
-
-      .gallery-main img {
-        height: 260px !important;
-        max-height: 260px !important;
-        object-fit: cover !important;
-      }
-
-      .gallery-arrow {
-        width: 38px !important;
-        height: 38px !important;
-      }
-
-      .gallery-prev {
-        left: 10px !important;
-      }
-
-      .gallery-next {
-        right: 10px !important;
-      }
-
-      .gallery-counter {
-        bottom: 10px !important;
-        right: 10px !important;
-        font-size: 0.75rem !important;
-      }
-
-      .gallery-thumbs {
-        display: grid !important;
-        grid-template-columns: repeat(4, 1fr) !important;
-        gap: 8px !important;
-      }
-
-      .gallery-thumbs img {
-        width: 100% !important;
-        height: 58px !important;
-        object-fit: cover !important;
-      }
-
-      .tech-section,
-      .car-description {
-        padding: 1.2rem !important;
       }
 
       .tech-table,
@@ -200,27 +156,7 @@
       .tech-table td {
         padding: 0.2rem 0 !important;
       }
-    }
 
-    @media (max-width: 420px) {
-
-      .car-info-name {
-        font-size: 1.55rem !important;
-      }
-
-      .gallery-main img {
-        height: 220px !important;
-        max-height: 220px !important;
-      }
-
-      .gallery-thumbs img {
-        height: 50px !important;
-      }
-
-      .car-main-content {
-        padding-left: 3.5% !important;
-        padding-right: 3.5% !important;
-      }
     }
 
   </style>
@@ -230,7 +166,10 @@
 
   <!-- NAVBAR -->
   <nav class="navbar scrolled" id="navbar">
-    <a href="index.html" class="nav-logo">AUTO <span>PARK</span></a>
+
+    <a href="index.html" class="nav-logo">
+      AUTO <span>PARK</span>
+    </a>
 
     <ul class="nav-links">
       <li><a href="index.html">Acasă</a></li>
@@ -245,6 +184,7 @@
       <span></span>
       <span></span>
     </button>
+
   </nav>
 
   <!-- MOBILE MENU -->
@@ -263,7 +203,7 @@
 
       <div class="car-detail-layout">
 
-        <!-- STÂNGA -->
+        <!-- LEFT -->
         <div class="car-left-column">
 
           <!-- GALLERY -->
@@ -291,13 +231,16 @@
 
           </div>
 
-          <!-- DESCRIERE -->
+          <!-- DESCRIPTION -->
           <div class="car-description">
+
             <h3>Descriere</h3>
+
             <p id="carDescription"></p>
+
           </div>
 
-          <!-- SPECIFICATII -->
+          <!-- TECH -->
           <div class="tech-section">
 
             <h3>Specificații tehnice</h3>
@@ -310,9 +253,10 @@
 
         </div>
 
-        <!-- DREAPTA -->
+        <!-- RIGHT -->
         <div class="car-right-column">
 
+          <!-- INFO -->
           <div class="car-info-panel">
 
             <div class="car-info-badge" id="carBadge">
@@ -344,23 +288,28 @@
           </div>
 
           <!-- CONTACT -->
-          <div style="background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1rem;">
+          <div class="contact-card"
+               style="background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1rem;">
 
             <div style="font-family: var(--font-display); font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); margin-bottom: 1rem;">
               Contact rapid
             </div>
 
             <div style="margin-bottom: 1rem;">
+
               <div style="font-size: 0.75rem; color: var(--muted); margin-bottom: 0.2rem;">
                 Telefon
               </div>
 
-              <a href="tel:+40XXXXXXXXX" style="font-size: 1rem; font-weight: 700;">
+              <a href="tel:+40XXXXXXXXX"
+                 style="font-size: 1rem; font-weight: 700;">
                 +40 XXX XXX XXX
               </a>
+
             </div>
 
             <div>
+
               <div style="font-size: 0.75rem; color: var(--muted); margin-bottom: 0.2rem;">
                 Locație
               </div>
@@ -368,12 +317,14 @@
               <span>
                 Oraș, România
               </span>
+
             </div>
 
           </div>
 
           <!-- PROGRAM -->
-          <div style="background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1rem;">
+          <div class="program-card"
+               style="background: var(--card); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1.5rem; margin-top: 1rem;">
 
             <div style="font-family: var(--font-display); font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); margin-bottom: 1rem;">
               Program
@@ -429,9 +380,11 @@
     </div>
 
     <div class="footer-bottom">
+
       <p class="footer-copy">
         © 2025 <span>AUTO PARK</span>. Toate drepturile rezervate.
       </p>
+
     </div>
 
   </footer>
