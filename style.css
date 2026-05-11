@@ -1074,7 +1074,6 @@ section {
 
 /* ===== CAR DETAIL INFO ===== */
 .car-info-panel {
-  position: sticky;
   top: calc(var(--nav-h) + 1.5rem);
 }
 
