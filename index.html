@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <title>Parc Auto | Mașini Verificate de Vânzare</title>
+  <meta name="description" content="Descoperă mașini verificate, pregătite pentru drum, disponibile într-un parc auto serios. Vezi ofertele și sună pentru detalii.">
+  <meta name="keywords" content="parc auto, masini de vanzare, autoturisme second hand, dealer auto, masini verificate">
+  <meta name="author" content="AUTO PARK">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Parc Auto | Mașini Verificate de Vânzare">
+  <meta property="og:description" content="Descoperă mașini verificate, pregătite pentru drum, disponibile într-un parc auto serios. Vezi ofertele și sună pentru detalii.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://autopark.ro/">
+  <meta property="og:image" content="masina1.jpg">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="index">
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <a href="index.html" class="nav-logo">AUTO <span>PARK</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Acasă</a></li>
+      <li><a href="#masini">Mașini</a></li>
+      <li><a href="#despre">Despre noi</a></li>
+      <li><a href="#recenzii">Recenzii</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Meniu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Meniu mobil">
+    <a href="index.html">Acasă</a>
+    <a href="#masini">Mașini</a>
+    <a href="#despre">Despre noi</a>
+    <a href="#recenzii">Recenzii</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-video-wrap">
+      <video
+        src="video.mp4"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="auto"
+        aria-hidden="true"
+      ></video>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge fade-in-up">Parc auto verificat</div>
+      <h1 class="hero-title fade-in-up delay-1">
+        Mașini verificate,<br><em>pregătite</em> pentru drum
+      </h1>
+      <p class="hero-subtitle fade-in-up delay-2">
+        Alege mașina potrivită dintr-un parc auto serios, cu oferte actualizate și consultanță rapidă.
+      </p>
+      <div class="hero-actions fade-in-up delay-3">
+        <a href="#masini" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          Vezi mașinile
+        </a>
+        <a href="tel:+40XXXXXXXXX" class="btn btn-outline">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 5.94 5.94l1.77-1.77a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Sună acum
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CARS SECTION ===== -->
+  <section class="cars-section" id="masini">
+    <div class="cars-header">
+      <div>
+        <div class="section-label">Stoc disponibil</div>
+        <h2 class="section-title">Mașini disponibile</h2>
+        <p class="section-sub">Toate mașinile sunt verificate și pregătite pentru drum. Actualizăm stocul permanent.</p>
+      </div>
+    </div>
+    <div class="cars-grid" id="carsGrid">
+      <!-- populated by script.js -->
+    </div>
+  </section>
+
+  <!-- ===== DESPRE NOI ===== -->
+  <section class="about-section" id="despre">
+    <div class="about-inner">
+      <div class="about-text">
+        <div class="section-label">Cine suntem</div>
+        <h2 class="section-title">Transparență &amp; seriozitate</h2>
+        <p style="color: var(--muted-light); line-height: 1.85; margin-bottom: 1.5rem; font-size: 0.97rem;">
+          Suntem un parc auto dedicat clienților care caută mașini verificate, transparente și pregătite pentru utilizare. Punem accent pe seriozitate, comunicare rapidă și prezentarea clară a fiecărei mașini.
+        </p>
+        <p style="color: var(--muted); line-height: 1.85; font-size: 0.92rem;">
+          Fiecare mașin trece printr-un control tehnic riguros înainte de a fi pusă în vânzare. Oferim transparență totală privind istoricul vehiculului, testul de verificare Dekra sau RAR, și vă însoțim în tot procesul de achiziție.
+        </p>
+
+        <div class="about-stats">
+          <div class="stat-box">
+            <div class="stat-number">200+</div>
+            <div class="stat-label">Mașini vândute</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">98%</div>
+            <div class="stat-label">Clienți mulțumiți</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">8 ani</div>
+            <div class="stat-label">Experiență</div>
+          </div>
+          <div class="stat-box">
+            <div class="stat-number">100%</div>
+            <div class="stat-label">Verificate Dekra</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-visual">
+        <div class="about-visual-card">
+          <div class="about-icon-row">
+            <div class="about-icon-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <span>Garanție</span>
+            </div>
+            <div class="about-icon-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              <span>Verificat</span>
+            </div>
+            <div class="about-icon-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              <span>Certificat</span>
+            </div>
+          </div>
+          <p class="about-desc">
+            Fiecare mașin din parcul nostru vine cu istoricul complet, fișa de inspecție și raport de evaluare. Nu vindem mașini cu probleme ascunse.
+          </p>
+          <div style="margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--border);">
+            <div style="font-family: var(--font-display); font-size: 0.75rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); margin-bottom: 1rem;">Program de lucru</div>
+            <div style="font-size: 0.9rem; color: var(--muted-light); line-height: 2;">
+              Luni – Vineri: 09:00 – 18:00<br>
+              Sâmbătă: 10:00 – 16:00<br>
+              Duminică: <span style="color: var(--muted);">Închis</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== RECENZII ===== -->
+  <section class="reviews-section" id="recenzii">
+    <div class="section-label">Ce spun clienții</div>
+    <h2 class="section-title">Recenzii reale</h2>
+
+    <div class="reviews-grid">
+
+      <div class="review-card">
+        <div class="review-stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="review-text">
+          "Am cumpărat un BMW 520d și sunt extrem de mulțumit. Mașina era exact cum a fost descrisă, fără surprize neplăcute. Procesul de achiziție a fost rapid și transparent. Recomand cu toată încrederea!"
+        </p>
+        <div class="review-author">
+          <div class="review-avatar">A</div>
+          <div>
+            <div class="review-name">Alexandru M.</div>
+            <div class="review-meta">Cumpărător verificat · Iași</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="review-text">
+          "Echipa de la AUTO PARK m-a ajutat să găsesc exact ce căutam. Mi-au explicat tot despre mașină, mi-au arătat raportul Dekra și m-au însoțit la ITP. Servicii la cel mai înalt nivel, nu ca alte parcuri auto."
+        </p>
+        <div class="review-author">
+          <div class="review-avatar">M</div>
+          <div>
+            <div class="review-name">Maria D.</div>
+            <div class="review-meta">Cumpărător verificat · București</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-stars">
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        </div>
+        <p class="review-text">
+          "Sunt la a doua mașina cumpărată de la ei. Prețurile sunt corecte, mașinile impecabile și comunicarea excelentă. Răspund repede la telefon și la mesaje. Nimic de reproșat, mă întorc și data viitoare!"
+        </p>
+        <div class="review-author">
+          <div class="review-avatar">C</div>
+          <div>
+            <div class="review-name">Cristian P.</div>
+            <div class="review-meta">Client fidel · Cluj-Napoca</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== CONTACT / CTA ===== -->
+  <section class="cta-section" id="contact">
+    <div class="cta-inner">
+      <div class="section-label">Contactează-ne</div>
+      <h2 class="section-title">Ai găsit o mașină potrivită?</h2>
+      <p>
+        Nu pierde ocazia. Sună-ne acum pentru detalii, test drive sau pentru a rezerva mașina preferată. Răspundem rapid și sincer la orice întrebare.
+      </p>
+      <a href="tel:+40XXXXXXXXX" class="btn btn-primary btn-lg">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 5.94 5.94l1.77-1.77a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        Sună acum
+      </a>
+      <div class="cta-number">+40 XXX XXX XXX</div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo">AUTO <span>PARK</span></a>
+        <p>Parc auto serios, cu mașini verificate și prezentate transparent. Seriozitate, profesionalism și prețuri corecte.</p>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.59 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 5.94 5.94l1.77-1.77a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          +40 XXX XXX XXX
+        </div>
+        <div class="footer-contact-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Oraș, România
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Navigare</h4>
+        <ul>
+          <li><a href="index.html">Acasă</a></li>
+          <li><a href="#masini">Mașini</a></li>
+          <li><a href="#despre">Despre noi</a></li>
+          <li><a href="#recenzii">Recenzii</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Program</h4>
+        <ul>
+          <li><a href="#">Luni – Vineri: 09 – 18</a></li>
+          <li><a href="#">Sâmbătă: 10 – 16</a></li>
+          <li><a href="#" style="color: var(--muted);">Duminică: Închis</a></li>
+        </ul>
+        <div style="margin-top: 1.5rem;">
+          <h4>Urmărește-ne</h4>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="footer-copy">© 2025 <span>AUTO PARK</span>. Toate drepturile rezervate.</p>
+      <p class="footer-copy">Mașini verificate. Prețuri corecte.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
