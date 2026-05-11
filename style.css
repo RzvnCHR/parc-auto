@@ -968,7 +968,6 @@ section {
 
 /* ===== GALLERY ===== */
 .gallery {
-  position: sticky;
   top: calc(var(--nav-h) + 1.5rem);
 }
 
