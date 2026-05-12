@@ -321,12 +321,12 @@
       Mașini verificate. Prețuri corecte.
     </p>
 
-    <p class="footer-crafted">
-      Creat cu precizie de
-      <a href="https://scalamafaceri.ro" target="_blank">
-        <span>Scalamafaceri.ro</span>
-      </a>
-    </p>
+<p class="footer-crafted">
+  Creat cu precizie de
+  <a href="https://scalamafaceri.ro" target="_blank">
+    <span>scalamafaceri.ro</span>
+  </a>
+</p>
 
   </div>
 </footer>
@@ -346,16 +346,35 @@
 }
 
 .footer-crafted span {
-  color: #aa00ff;
+  color: #d90429;
   transition: 0.25s ease;
   font-weight: 600;
 }
 
 .footer-crafted span:hover {
-  color: #d84dff;
+  color: #ff365d;
   text-shadow:
-    0 0 8px rgba(170, 0, 255, 0.7),
-    0 0 18px rgba(170, 0, 255, 0.45);
+    0 0 8px rgba(217, 4, 41, 0.7),
+    0 0 18px rgba(217, 4, 41, 0.45);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .footer-bottom {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+
+  .footer-copy,
+  .footer-crafted {
+    width: 100% !important;
+    text-align: center !important;
+  }
+
 }
 
 </style>
